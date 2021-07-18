@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Demo23-Properties/Demo23-Properties.iml" filepath="$PROJECT_DIR$/Demo23-Properties/Demo23-Properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo24-Reflect/Demo24-Reflect.iml" filepath="$PROJECT_DIR$/Demo24-Reflect/Demo24-Reflect.iml" />
+    </modules>
+  </component>
+</project>

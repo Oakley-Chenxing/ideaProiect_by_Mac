@@ -1,0 +1,6 @@
+#There is mysql configure info!
+#Sun Jul 18 10:52:03 CST 2021
+LOCALHOST=127.0.0.1
+PORT=3305
+USERNAME=ROOT
+PASSWORD=123456
