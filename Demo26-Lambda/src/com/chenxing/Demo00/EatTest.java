@@ -8,6 +8,13 @@ package com.chenxing.Demo00;
  */
 public class EatTest {
     public static void main(String[] args) {
+        // 匿名内部类
+        runEat(new Eat() {
+            @Override
+            public void eat(String food) {
+                System.out.println("匿名内部类 爱吃："+food);
+            }
+        });
         // Lambda 表达式
         runEat((food)->{
             System.out.println("Lambda 爱吃： "+food);
