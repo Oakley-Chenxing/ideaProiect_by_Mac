@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/Demo24-Reflect/Demo24-Reflect.iml" filepath="$PROJECT_DIR$/Demo24-Reflect/Demo24-Reflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo25-Thread/Demo25-Thread.iml" filepath="$PROJECT_DIR$/Demo25-Thread/Demo25-Thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo26-Lambda/Demo26-Lambda.iml" filepath="$PROJECT_DIR$/Demo26-Lambda/Demo26-Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo27-NetWork/Demo27-NetWork.iml" filepath="$PROJECT_DIR$/Demo27-NetWork/Demo27-NetWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo28-Enum/Demo28-Enum.iml" filepath="$PROJECT_DIR$/Demo28-Enum/Demo28-Enum.iml" />
     </modules>
   </component>
 </project>

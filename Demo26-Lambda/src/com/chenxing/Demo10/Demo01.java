@@ -55,7 +55,8 @@ public class Demo01 {
             list.stream().filter(s -> s.length()==3)
                     .filter(s -> s.startsWith("李"))
                     .forEach(System.out::println);
-        }
+        System.out.println("============================");
+         }
     /**
      * 初始化测试数据
      * @param list 目标集合
