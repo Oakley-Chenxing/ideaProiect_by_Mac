@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName SendTest01
- * @Description: TODO 发送键盘输入的内容 直到over 结束操作
+ * @Description: TODO UDP 发送键盘输入的内容 直到over 结束操作
  * @Author: lichenxingbeijing@163.com
  * @date ：Created in 2021/7/23 5:11 下午
  */
@@ -22,6 +22,7 @@ public class SendTest01 {
         while(true){
             System.out.print("Please input: ");
             line = new Scanner(System.in).nextLine();
+
             if ("over".equals(line))// 遇到over 结束
                 break;
 
@@ -29,7 +30,7 @@ public class SendTest01 {
             byte[] bytes = line.getBytes();
             int length = bytes.length;
             InetAddress address02 = InetAddress.getByName("127.0.0.1");
-            int port = 5230;
+            int port = 27149;
             DatagramPacket dp = new DatagramPacket(bytes, length, address02, port);
 
             // 发送
