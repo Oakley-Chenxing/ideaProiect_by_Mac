@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+setTimeout(function() {
+console.log(1)
+}, 0);
+new Promise(function(resolve, reject) {
+console.log(2);
+resolve()
+}).then(function() {
+console.log(3)
+});
+process.nextTick(function () {
+console.log(4)
+})
+console.log(5)
+    </script>
+</body>
+</html>

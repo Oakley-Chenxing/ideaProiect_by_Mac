@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/Demo26-Lambda/Demo26-Lambda.iml" filepath="$PROJECT_DIR$/Demo26-Lambda/Demo26-Lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo27-NetWork/Demo27-NetWork.iml" filepath="$PROJECT_DIR$/Demo27-NetWork/Demo27-NetWork.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo28-Enum/Demo28-Enum.iml" filepath="$PROJECT_DIR$/Demo28-Enum/Demo28-Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo29-ExerciseAse/Demo29-ExerciseAse.iml" filepath="$PROJECT_DIR$/Demo29-ExerciseAse/Demo29-ExerciseAse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo30/Demo30.iml" filepath="$PROJECT_DIR$/Demo30/Demo30.iml" />
     </modules>
   </component>
 </project>
