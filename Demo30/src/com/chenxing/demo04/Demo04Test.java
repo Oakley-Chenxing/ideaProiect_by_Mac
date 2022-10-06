@@ -1,4 +1,4 @@
-package com.chenxing.demo02;
+package com.chenxing.demo04;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -6,25 +6,27 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * @ClassName Demo02Test
- * @Description: TODO 测试静态封装的 JDBC 工具类
+ * @ClassName Demo04Test
+ * @Description: TODO
  * @Author: lichenxingbeijing@163.com
- * @date ：Created in 05/10/2022 16:36
+ * @date ：Created in 06/10/2022 15:38
  */
-public class Demo02Test {
+public class Demo04Test {
     public static void main(String[] args) throws SQLException {
-        // 获取连接
-        Connection conn = JdbcUtils.getconnection();
-        // 获取执行 sql 语句的对象
+        //通过工具类的静态方法获取单例对象
+        JdbcUtilsSing jdbc = JdbcUtilsSing.getInstance();
+        // 通过工具类对象 获取连接
+        Connection conn = jdbc.getConnection();
+        //通过连接对象获取执行 sql 命令的对象
         Statement st = conn.createStatement();
-        // 组织sql 语句
-        String sql = "select `id`,`name`,`sex`,`age`,`score`,`tel`,`classid` from `student`";
-        //执行 sql语句
+        // 组织sql语句并执行
+        String sql = "select `id`, `name`,`sex`,`age`,`score`,`tel`,`classid` from `student`";
         ResultSet rs = st.executeQuery(sql);
         // 处理结果集
         showRes(rs);
         // 释放资源
-        JdbcUtils.free(rs,st,conn);
+        jdbc.free(rs,st,conn);
+
     }
 
     /**
