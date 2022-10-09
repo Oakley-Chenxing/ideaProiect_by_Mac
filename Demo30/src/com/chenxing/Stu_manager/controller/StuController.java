@@ -1,6 +1,11 @@
 package com.chenxing.Stu_manager.controller;
 
+import com.chenxing.Stu_manager.global.Student;
+import com.chenxing.Stu_manager.model.StuModel;
 import com.chenxing.Stu_manager.views.StuPage;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * @ClassName StuController
@@ -9,11 +14,12 @@ import com.chenxing.Stu_manager.views.StuPage;
  * @date ：Created in 07/10/2022 14:27
  */
 public class StuController {
+    private StuModel sm = new StuModel();
     /**
      * 学生功能 的总调度器
      * @param a
      */
-    public void action(int a) {
+    public void action(int a) throws SQLException {
         switch (a){
             case 1:
                 //int a = StuPage.showSelPage();
@@ -40,11 +46,21 @@ public class StuController {
      * 查询功能调度器
      * @param a 查询功能序号
      */
-    private void showAction(int a) {
+    private void showAction(int a) throws SQLException {
         switch (a){
             case 1: // 查询全部
+                // 通过模型层拿到数据
+                // 将拿到的数据展示出来
+                StuPage.showStuList(sm.getAllStu());
+//                ArrayList<Student> stuList = sm.getAllStu();
+//                StuPage.showStuList(stuList);
+
                 break;
             case 2: // 学号
+                StuPage.showStuList(sm.getStuByID(StuPage.getStuID()));
+//                int stuID = StuPage.getStuID();
+//                StuPage.showStuList(sm.getStuByID(stuID));
+
                 break;
             case 3: // 姓名
                 break;

@@ -3,6 +3,8 @@ package com.chenxing.Stu_manager;
 import com.chenxing.Stu_manager.controller.StuController;
 import com.chenxing.Stu_manager.views.StuPage;
 
+import java.sql.SQLException;
+
 /**
  * @ClassName StudentManagerMain
  * @Description: TODO 主方法类
@@ -10,7 +12,7 @@ import com.chenxing.Stu_manager.views.StuPage;
  * @date ：Created in 07/10/2022 14:25
  */
 public class StudentManagerMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         StuController sc = new StuController();
         // 1.功能选择页面 (获取到用户选择的功能序号)
         //int a = StuPage.funSelPage();

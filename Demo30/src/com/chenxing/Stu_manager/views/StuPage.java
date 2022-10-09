@@ -1,5 +1,8 @@
 package com.chenxing.Stu_manager.views;
 
+import com.chenxing.Stu_manager.global.Student;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -56,5 +59,36 @@ public class StuPage {
         } while (a > 8 || a < 0);
         return a;
 
+    }
+
+    /**
+     * 格式化输出学生让那个信息
+     * @param stuList 要输出的学生信息
+     */
+    public static void showStuList(ArrayList<Student> stuList) {
+        String[] sex = {"girl","boy","other"};
+        // 制表符
+        System.out.printf("┌──────┬────────────┬──────┬──────┬──────┬────────────┬──────────┐\n");
+        System.out.printf("│%-6s│%-12s│%-6s│%-6s│%-6s│%-12s│%-10s│\n",
+                "ID", "NAME", "SEX", "AGE", "SCORE", "TEL", "CLASSID");
+        for (Student stu : stuList) {
+            System.out.printf("├──────┼────────────┼──────┼──────┼──────┼────────────┼──────────┤\n");
+            System.out.printf("│%-6s│%-12s│%-6s│%-6s│%-6s│%-12s│%-10s│\n",
+                    stu.getId(), stu.getName(),
+                    sex[Integer.parseInt(stu.getSex())],
+                    stu.getAge(), stu.getScore(),
+                    stu.getTel(), stu.getClassid());
+        }
+        System.out.printf("└──────┴────────────┴──────┴──────┴──────┴────────────┴──────────┘\n");
+
+    }
+
+    /**
+     * 获取学生ID
+     * @return 用户输入的ID
+     */
+    public static int getStuID() {
+        System.out.println("请输入学生的 ID: ");
+        return new Scanner(System.in).nextInt();
     }
 }
